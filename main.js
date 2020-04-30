@@ -3,8 +3,8 @@
 
 
 
-let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
-let newArray = [];
+const ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
+const newArray = [];
 
 for (let i=0; i < ages.length; i++) {
     const num = ages[i]
@@ -21,23 +21,23 @@ console.log(newArray)
 // // 2c. output "Yoda says, "The greatest teacher, failure is"
 
 // console.log("1")
-let yoda_quote = ["the", "greatest", "teacher", "failure", "is"]
-const yQ = [];
+const yoda_quote = ["the", "greatest", "teacher", "failure", "is"]
+
 
 for (let i = 0; i < yoda_quote.length; i++) {
-    let element = yoda_quote[i];
+    const element = yoda_quote[i];
      if (element === "the") {
-        let let1 = element.slice(0, 1).toUpperCase();
-        let rOW = element.slice(1)
-        let tHE = let1 + rOW;
-        yoda_quote[i] = tHE
+        const firstLetter = element.slice(0, 1).toUpperCase();
+        const restOfWord = element.slice(1)
+        const capThe = firstLetter + restOfWord;
+        yoda_quote[i] = capThe
 // console.log("2")
     }
 if (element === "teacher") {
-    let comma = element + ",";
+    const comma = element + ",";
     yoda_quote[i] = comma;
     }
 }
-const yQF = yoda_quote.join(" ");
+const yodaFullQuote = yoda_quote.join(" ");
 // console.log("3")
-console.log(`Yoda says, "${yQF}"`)
+console.log(`Yoda says, "${yodaFullQuote}"`)
